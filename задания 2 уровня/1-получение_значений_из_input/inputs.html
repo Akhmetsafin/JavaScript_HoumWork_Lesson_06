@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <input id="from" type="text">
-    В инпуте написано: <span></span>
+    <input id="from" type="text"> В инпуте написано: <span></span>
+    <br>
+    <input id="from1" type="text"> В инпуте написано:
+    <span1></span1>
 
     <!-- Задание.
     1. Сохраните в переменную ссылку на span, например с помощью querySelector.
@@ -19,7 +23,19 @@
     -->
 
     <script>
-        
+        'use strict';
+        let spun = document.querySelectorAll('spun1');
+        let fromEl = document.querySelector('input1');
+        fromEl.addEventListener('change', function(event) {
+            spun.textContent = event.target.value;
+        });
+
+        let span1 = document.querySelector('span');
+        let fromEl1 = document.querySelector('input');
+        fromEl1.addEventListener('change', function(event) {
+            span1.textContent = event.target.value;
+        });
     </script>
 </body>
+
 </html>
